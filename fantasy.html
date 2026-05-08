@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy Creatures</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+
+    <style>
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            background-color: #ba8cbe;
+            background-size: cover;
+            text-align: center;
+        }
+
+        #header {
+            display: flex;
+            justify-content: center;
+        }
+
+        #headerLogo {
+            height: 300px;
+            align-items: center;
+            justify-self: center;
+        }
+
+        #mainName {
+            color: #fffcd1;
+            font-size: 650%;
+            font-family: "Lilita One", bold;
+        }
+
+        @media (max-width: 768px) {
+            #header {
+                height: 300px;
+            }
+            #mainName {
+                font-size: 400%;
+            }
+        }
+
+        @media (max-width: 992px) {
+            #mainName {
+                font-size: 480%;
+            }
+        }
+
+        .quilt-container {
+            display: grid;
+            align-self: center;
+            grid-template-columns: repeat(5, 350px); /* number of columns */
+            grid-template-rows: repeat(5, 350px);
+            gap: 2px; /* simulates seam lines */
+            background-color: transparent;
+        }
+
+        .patch {
+            width: 350px;
+            height: 350px;
+        }
+
+        .color-a { 
+            background-color: #ffa7b8;
+            background-size: cover;
+            border: 3px solid #ffc107;
+        }
+
+        .color-b { 
+            background-color: #9172a2;
+            background-size: cover;
+            border: 3px solid #ffc107;
+        }
+
+        @media (max-width: 768px) {
+            .quilt-container {
+                grid-template-columns: repeat(5, 117px);
+                grid-template-rows: repeat(5, 117px);
+            }
+            .patch {
+                width: 117px;
+                height: 117px;
+            }
+        }
+
+        @media (min-width: 769px) and (max-width: 992px) {
+            .quilt-container {
+                grid-template-columns: repeat(5, 150px);
+                grid-template-rows: repeat(5, 150px);
+            }
+            .patch {
+                width: 150px;
+                height: 150px;
+            }
+        }
+
+        @media (min-width: 993px) and (max-width: 1600px) {
+            .quilt-container {
+                grid-template-columns: repeat(5, 197px);
+                grid-template-rows: repeat(5, 197px);
+                gap: 0px;
+            }
+            .patch {
+                width: 197px;
+                height: 197px;
+            }
+        }
+
+        @media (min-width: 1601px) and (max-width: 1700px) {
+            .quilt-container {
+                grid-template-columns: repeat(5, 260px);
+                grid-template-rows: repeat(5, 260px);
+                gap: 0px;
+            }
+            .patch {
+                width: 260px;
+                height: 260px;
+            }
+        }
+
+        #footer {
+            width: 100%;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+        }
+
+        #footer p {
+            font-size: 160%;
+            color: #1f1a32;
+            text-shadow: 2px 2px 4px #4f2962;
+            font-family: "Lilita One", bold;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+
+    <!--header-->
+    <header id="header"> 
+            
+        <!--header, logo-->
+        <a href="./plushies.html" class="d-flex align-items-center text-decoration-none"> 
+            <img id="headerLogo" src="./logo.png" alt="Nat's Creatures Logo">
+        </a>
+        
+    </header>
+
+
+    <h1 id="mainName" class="name">Fantasy Creatures</h1> 
+
+
+    <div class="quilt-container">
+        <div class="patch color-a" style="border-radius: 20% 0% 0% 0%;"></div>
+        <div class="patch color-b"></div>
+        <div class="patch color-a"></div>
+        <div class="patch color-b"></div>
+        <div class="patch color-a" style="border-radius: 0% 20% 0% 0%;"></div>
+        <div class="patch color-b"></div>
+        <div class="patch color-a"></div>
+        <div class="patch color-b"></div>
+        <div class="patch color-a"></div>
+        <div class="patch color-b"></div>
+        <div class="patch color-a"></div>
+        <div class="patch color-b"></div>
+        <div class="patch color-a"></div>
+        <div class="patch color-b"></div>
+        <div class="patch color-a"></div>
+        <div class="patch color-b"></div>
+        <div class="patch color-a"></div>
+        <div class="patch color-b"></div>
+        <div class="patch color-a"></div>
+        <div class="patch color-b"></div>
+        <div class="patch color-a" style="border-radius: 0% 0% 0% 20%;"></div>
+        <div class="patch color-b"></div>
+        <div class="patch color-a"></div>
+        <div class="patch color-b"></div>
+        <div class="patch color-a" style="border-radius: 0% 0% 20% 0%;"></div>
+    </div>
+
+
+    <!--footer-->
+        
+    <footer id="footer"> 
+        
+
+        <a href="https://www.facebook.com/share/182buaeSmq/" class="text-decoration-none"> 
+            <img id="footerLogo" src="./logo.png" alt="logo" height="50">
+        </a> 
+           
+        <p class="name text-decoration-none">© NAT'S CREATURES.</p>
+    
+    </footer> 
+    
+
+</body>
+</html>

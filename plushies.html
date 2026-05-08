@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plushies</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            background-color: #ba8cbe;
+            background-size: cover;
+            flex-wrap: wrap !important;
+            text-align: center;
+        }
+
+        #header {
+            display: flex;
+            flex-wrap: wrap !important;
+            justify-content: center;
+        }
+
+        .name {
+            color: #fffcd1;
+            font-family: "Lilita One", bold;
+            font-weight: 400;
+            font-style: bold;
+        }
+
+        #mainName {
+            font-size: 600%;
+            padding-top: 6px;
+            margin: 1%;
+            justify-self: center;
+        }
+
+        @media (max-width: 768px) {
+            #mainName {
+                font-size: 400%;
+            }
+        }
+
+        @media (max-width: 992px) {
+            #mainName {
+                font-size: 480%;
+            }
+        }
+
+        #hero {
+            background-color: #4f2962;
+            width: 70%;
+            margin: 1%;
+            align-self: center;
+            border: 5px dashed #ff6c8f;
+            border-radius: 30%;
+            text-align: center;
+            padding: 1.5%;
+            justify-self: center;
+        }
+
+        @media (max-width: 768px) {
+            #hero {
+                width: 90%;
+            }
+        }
+
+        .col-lg-6 {
+            width: 100%;
+            margin: 2%;
+            justify-items: center;
+            font-family: "Lilita One", bold;
+        }
+
+        .d-grid {
+            gap: 50px;
+        }
+
+        @media (max-width: 768px) {
+            .d-grid {
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .d-grid {
+                flex-direction: column;
+                align-items: center;
+                gap: 40px;
+            }
+        }
+
+        .text-body-secondary {
+            width: 140%;
+            padding: 4%;
+            text-align: center;
+            border: 6px solid #ba8cbe;
+            background-color: #9172a2;
+            border-radius: 50%;
+        }
+
+        .text-body-secondary:hover {
+            background-color: #ffc107;
+        }
+
+        @media (max-width: 992px) {
+            .text-body-secondary {
+                padding: 22%;
+            }
+        }
+
+        #footer {
+            width: 100%;
+            text-align: center;
+            position: relative; 
+            bottom: 0;
+            justify-self: center;
+        }
+
+        #footer span {
+            font-size: 160%;
+            color: #1f1a32;
+            text-shadow: 2px 2px 4px #4f2962;
+            font-family: "Lilita One", bold;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <!--header-->
+    <div class="container"> 
+        <header id="header" class="d-flex flex-wrap py-4"> 
+            
+            <!--header, logo-->
+            <div class="headerBranding">
+                <a href="./catalogue.html" class="d-flex align-items-center text-decoration-none"> 
+                    
+                    <img src="./logo.png" alt="Nat's Creatures Logo" height="230">
+                </a>
+            </div>
+        
+        </header>
+    </div>
+
+    <!--centered hero-->
+    <div id="hero"> 
+        <h1 id="mainName" class="name">Plushies</h1> 
+        <div class="col-lg-6 mx-auto">             
+            <div class="d-grid p-3 d-sm-flex justify-content-sm-center text-decoration-none">
+                
+                <a id="category" class="text-body-secondary align-content-center" href="./animals.html">
+                    <h3>Animals</h3>
+                    <!-- <img src="" width=""/> -->
+                </a>
+
+                <a id="category" class="text-body-secondary align-content-center" href="./bugs.html">
+                    <h3>Bugs & Critters</h3>
+                    <!-- <img src="" width=""/>  -->
+                </a>
+
+                <a id="category" class="text-body-secondary align-content-center" href="./fantasy.html">
+                    <h3>Fantasy</h3>
+                    <!-- <img src="" width=""/>  -->
+                </a>
+
+                <a id="category" class="text-body-secondary align-content-center" href="./pop-char.html">
+                    <h3>Popular peeps</h3>
+                    <!-- <img src="" width=""/>  -->
+                </a>
+            
+            </div> 
+        
+        </div> 
+    </div>
+
+    <!--footer-->
+    <div class="container"> 
+        
+        <footer id="footer" class="d-flex justify-content-center py-2 my-4"> 
+            
+            <!--footer left-->
+            <div class="d-flex align-items-center"> 
+                <a href="https://www.facebook.com/share/182buaeSmq/" class="me-2 mb-md-0 text-decoration-none"> 
+                    <img id="footerLogo" src="./logo.png" alt="logo" height="50"> 
+                </a> 
+                <span class="name mb-md-0">© NAT'S CREATURES.</span> 
+            </div> 
+        
+        </footer> 
+    
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

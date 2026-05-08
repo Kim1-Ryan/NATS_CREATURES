@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+<style>
+    
+    body {
+        display: flex;
+        flex-direction: column;
+        background-color: #ba8cbe;
+        background-size: cover;
+        flex-wrap: wrap !important;
+        text-align: center;
+    }
+
+    #header {
+        display: flex;
+        flex-wrap: wrap !important;
+        justify-content: space-between;
+    }
+
+    @media (max-width: 992px) {
+        #header {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .headerBranding {
+        text-shadow: 2px 2px 4px #4f2962;
+        padding: 0.7%;
+        border-radius: 30%;
+        text-align: center;
+        align-self: center;
+    }
+
+    #headerName {
+        color: rgb(0, 0, 0);
+        font-family: "Lilita One", bold;
+        font-style: bold;
+    }
+
+    #headerMenu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-item {
+        margin: 10px;
+        background-color: #ffc107;
+        text-decoration: none;
+        border-radius: 10px;
+        text-align: center;
+        align-content: center;
+    }
+
+    .nav-item:hover {
+        background-color: #ffa7b8;
+        border: 3px dashed #ff6c8f;
+        border-radius: 10px;
+        color: #1f1a32;
+    }
+
+    .nav-link {
+        text-decoration: none;
+        color: #1f1a32;
+        font-family: "Lilita One", bold;
+        font-size: 160%;
+        font-style: bold;
+        text-align: center;
+        align-content: center;
+    }
+
+    .nav-link:hover {
+        color: #4f2962;
+    }
+
+    .name {
+        color: #fffcd1;
+        font-family: "Lilita One", bold;
+        font-weight: 400;
+        font-style: bold;
+    }
+
+
+    #hero {
+        background-color: #4f2962;
+        width: 70%;
+        margin: 0.9%;
+        align-self: center;
+        border: 5px dashed #ff6c8f;
+        border-radius: 30%;
+        text-align: center;
+        padding: 1.5%;
+        justify-self: center;
+    }
+
+    #mainName {
+        font-size: 600%;
+        justify-self: center;
+    }
+
+    .lead {
+        width: 89%;
+        font-size: 220%;
+        color: #fffcd1;
+        justify-self: center;
+        font-family: "Lilita One", bold;
+    }
+
+    @media (max-width: 992px) {
+        #hero {
+            width: 90%;
+        }
+        #mainName {
+            font-size: 420%;
+            padding-top: 4%;
+        }
+        .lead {
+            font-size: 180%;
+            width: 80%;
+        }
+    }
+
+    #priceCards {
+        width: 90%;
+        justify-self: center;
+    }
+
+    @media (max-width: 992px) {
+        #priceCards {
+            width: 80%;
+            padding: 3%;
+        }
+    }
+
+    .card {
+        background: transparent;
+        border: transparent;
+    }
+
+    .card-header {
+        background-color: #9172a2;
+        border: 2px dashed #ff6c8f;
+        border-bottom: 1px dashed #ff6c8f;
+        border-top: 0;
+        width: 100%;
+        align-self: center;
+        color: #fffcd1;
+        font-family: "Lilita One", bold;
+    }
+
+    .card-body {
+        color: #fffcd1;
+        font-family: "Lilita One", bold;
+        font-size: 170%;
+        background-color: #302a4d;
+        border: 2px dashed #ff6c8f;
+        border-top: 0;
+        border-radius: 0% 0% 40% 40%;
+    }
+
+    #footer {
+        width: 100%;
+        text-align: center;
+    }
+
+    #footer span {
+        font-size: 160%;
+        color: #1f1a32;
+        text-shadow: 2px 2px 4px #4f2962;
+        font-family: "Lilita One", bold;
+    }
+
+</style>
+</head>
+<body>
+    
+    <!--header-->
+    <div class="container"> 
+        <header id="header" class="d-flex flex-wrap py-4"> 
+            
+            <!--header left, brand-->
+            <div class="headerBranding">
+                <a href="./index.html" class="d-flex align-items-center text-decoration-none"> 
+                    
+                    <img src="./logo.png" alt="Nat's Creatures Logo" height="60" class="me-1"> 
+                    <span id="headerName" class="name fs-2">NAT'S CREATURES</span> 
+                
+                </a>
+            </div>
+           
+            <!--header right, menu-->
+            <ul id="headerMenu" class="nav nav-pills"> 
+                <li class="nav-item">
+                    <a href="./catalogue.html" class="nav-link">Store</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        
+        </header>
+    </div>
+
+    <!--center content-->
+    <div id="hero"> 
+
+        <!--hero heading and subheading-->
+        <h1 id="mainName" class="name">Pricing Guide</h1> 
+        
+        <p class="lead">The cost of your order will depend on the items selected and the shipping destination. This varies based on the following:</p>
+       
+
+        <!--pricing cards-->
+        <div id="priceCards" class="row row-cols-1 row-cols-lg-3 mb-3 text-center"> 
+            
+            <div class="col"> 
+                <div class="card mb-4"> 
+                    <div class="card-header py-3"> 
+                        <h2 class="my-0">Standard</h2> 
+                    </div> 
+                    <div class="card-body"> 
+                        <ul class="list-unstyled mt-2 mb-4"> 
+                            <li>size of item</li> 
+                            <li>number of items</li> 
+                            <li>sale period</li> 
+                            <li>holiday specials</li> 
+                        </ul> 
+                    </div> 
+                </div> 
+            </div> 
+            
+            <div class="col"> 
+                <div class="card mb-4"> 
+                    <div class="card-header py-3"> 
+                        <h2 class="my-0">Commissions</h2> 
+                    </div> 
+                    <div class="card-body"> 
+                        <ul class="list-unstyled mt-2 mb-4"> 
+                            <li>Custom design fees</li> 
+                            <li>Material costs</li> 
+                            <li>Labor charges</li> 
+                            <li>Revision limits</li> 
+                        </ul> 
+                    </div> 
+                </div> 
+            </div> 
+           
+            <div class="col"> 
+                <div class="card mb-4 "> 
+                    <div class="card-header py-3"> 
+                        <h2 class="my-0">Shipping</h2> 
+                    </div> <div class="card-body"> 
+                        <ul class="list-unstyled mt-2 mb-4"> 
+                            <li>Standard/Express shipping</li> 
+                            <li>Distance-based rates</li> 
+                            <li>Package weight limits</li> 
+                        </ul> 
+                    </div> 
+                </div> 
+            </div> 
+        
+        </div>
+
+    </div>
+
+    <!--footer-->
+    <div class="container"> 
+        
+        <footer id="footer" class="d-flex justify-content-center py-2 my-4"> 
+            
+            <!--footer left-->
+            <div class="d-flex align-items-center"> 
+                <a href="https://www.facebook.com/share/182buaeSmq/" class="me-2 mb-md-0 text-decoration-none"> 
+                    <img id="footerLogo" src="./logo.png" alt="logo" height="50"> 
+                </a> 
+                <span class="name mb-md-0">© NAT'S CREATURES.</span> 
+            </div> 
+        
+        </footer> 
+    
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
