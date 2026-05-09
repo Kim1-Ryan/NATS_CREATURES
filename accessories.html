@@ -36,11 +36,17 @@
         }
 
         @media (max-width: 768px) {
-            #header {
-                height: 300px;
+            .quilt-container {
+                grid-template-columns: repeat(3, 117px);
+                grid-template-rows: repeat(3, 117px);
+                gap: 0px;
             }
-            #mainName {
-                font-size: 400%;
+            .patch {
+                width: 117px;
+                height: 117px;
+            }
+            #last {
+                display: none;
             }
         }
 
