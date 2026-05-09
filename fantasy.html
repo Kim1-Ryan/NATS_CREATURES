@@ -78,15 +78,19 @@
 
         @media (max-width: 768px) {
             .quilt-container {
-                grid-template-columns: repeat(5, 117px);
-                grid-template-rows: repeat(5, 117px);
+                grid-template-columns: repeat(3, 117px);
+                grid-template-rows: repeat(3, 117px);
+                gap: 0px;
             }
             .patch {
                 width: 117px;
                 height: 117px;
             }
+            #last {
+                display: none;
+            }
         }
-
+        
         @media (min-width: 769px) and (max-width: 992px) {
             .quilt-container {
                 grid-template-columns: repeat(5, 150px);
