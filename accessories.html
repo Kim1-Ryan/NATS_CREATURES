@@ -36,17 +36,11 @@
         }
 
         @media (max-width: 768px) {
-            .quilt-container {
-                grid-template-columns: repeat(3, 117px);
-                grid-template-rows: repeat(3, 117px);
-                gap: 0px;
+            #header {
+                height: 300px;
             }
-            .patch {
-                width: 117px;
-                height: 117px;
-            }
-            #last {
-                display: none;
+            #mainName {
+                font-size: 400%;
             }
         }
 
@@ -57,17 +51,17 @@
         }
 
         .quilt-container {
-            display: grid;
-            align-self: center;
-            grid-template-columns: repeat(5, 350px); /* number of columns */
-            grid-template-rows: repeat(5, 350px);
-            gap: 2px; /* simulates seam lines */
-            background-color: transparent;
+        display: grid;
+        align-self: center;
+        grid-template-columns: repeat(5, 350px); /* number of columns */
+        grid-template-rows: repeat(5, 350px);
+        gap: 2px; /* simulates seam lines */
+        background-color: transparent;
         }
 
         .patch {
-            width: 350px;
-            height: 350px;
+        width: 350px;
+        height: 350px;
         }
 
         .color-a { 
@@ -84,12 +78,16 @@
 
         @media (max-width: 768px) {
             .quilt-container {
-                grid-template-columns: repeat(5, 117px);
-                grid-template-rows: repeat(5, 117px);
+                grid-template-columns: repeat(3, 117px);
+                grid-template-rows: repeat(3, 117px);
+                gap: 0px;
             }
             .patch {
                 width: 117px;
                 height: 117px;
+            }
+            #last {
+                display: none;
             }
         }
 
