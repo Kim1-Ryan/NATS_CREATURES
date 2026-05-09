@@ -168,16 +168,6 @@
             justify-self: center;
         }
 
-        @media (max-width: 380px) {
-            #footerBranding {
-                flex-direction: column;
-            }
-            #footer {
-                flex-direction: column;
-                gap: 10px;
-            }
-        }
-
         #footer span {
             font-size: 150%;
             color: #1f1a32;
@@ -188,6 +178,19 @@
         #footerIcons {
             align-items: center;
             color: #1f1a32;
+        } 
+        
+        @media (max-width: 380px) {
+            #footerBranding {
+                flex-direction: column;
+            }
+            #footer {
+                flex-direction: column;
+                gap: 10px;
+            }
+            #footerIcons {
+                gap: 2px;
+            }
         }
 
     </style>
