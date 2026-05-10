@@ -88,6 +88,9 @@
         font-style: bold;
     }
 
+    #mobileHero {
+        display: hidden;
+    }
 
     #hero {
         background-color: #4f2962;
@@ -115,6 +118,12 @@
     }
 
     @media (max-width: 720px) {
+        #hero {
+            display: hidden;
+        }
+        #mobileHero {
+            display: flex;
+        }
         #mainName {
             font-size: 320%;
         }
@@ -294,6 +303,39 @@
     </div>
 
 
+    <!--mobile screen hero-->
+    <div id="mobileHero"> 
+        
+        <h1 id="mainName2" class="name">Made with love!</h1> 
+        
+        <div class="col-lg-6 mx-auto">             
+            
+            <div class="d-grid p-3 d-sm-flex justify-content-sm-center text-decoration-none">
+                
+                <a id="category" class="text-body-secondary align-content-center" href="./animals.html">
+                    <h3>Plushies</h3>
+                </a>
+
+                <a id="category" class="text-body-secondary align-content-center" href="./bugs.html">
+                    <h3>Fashion</h3>
+                </a>
+
+                <a id="category" class="text-body-secondary align-content-center" href="./fantasy.html">
+                    <h3>Commissions</h3>
+                </a>
+            
+            </div> 
+        
+        </div> 
+
+        <a href="./all-products.html" class="text-decoration-none">
+            <svg xmlns="http://www.w3.org/2000/svg" width="55" fill="bisque" class="bi bi-box2-heart-fill" viewBox="0 0 16 16"><path d="M3.75 0a1 1 0 0 0-.8.4L.1 4.2a.5.5 0 0 0-.1.3V15a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4.5a.5.5 0 0 0-.1-.3L13.05.4a1 1 0 0 0-.8-.4zM8.5 4h6l.5.667V5H1v-.333L1.5 4h6V1h1zM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/></svg>
+            <p class="name pt-2">View All</p>
+        </a>
+    
+    </div>
+
+    
     <!--footer-->
     <div class="container"> 
         
