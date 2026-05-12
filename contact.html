@@ -31,6 +31,23 @@
         align-self: center;
     }
 
+    .headerBranding span {
+        display: none;
+    }
+
+    @media (max-width: 768px) {
+        .headerBranding a {
+            flex-direction: column; 
+            gap: 10px;              
+        }
+        .headerBranding span {
+            display: flex;
+        }
+        #headerName {
+            font-size: 2rem; 
+        }
+    }
+
     .name {
         color: #fffcd1;
         font-family: "Lilita One", bold;
@@ -136,6 +153,8 @@
                 <a href="./index.html" class="d-flex align-items-center text-decoration-none"> 
                     
                     <img src="./logo.png" alt="Nat's Creatures Logo" height="230">
+                    <span id="headerName" class="name fs-2">NAT'S CREATURES</span> 
+                    
                 </a>
             </div>
         
