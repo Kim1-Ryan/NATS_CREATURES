@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
     <style>
+        
         body {
             display: flex;
             flex-direction: column;
@@ -76,9 +77,15 @@
         }
 
         .d-grid {
-            gap: 30px;
-            flex-direction: column;
-            align-items: center;
+            gap: 50px;
+        }
+
+        @media (max-width: 768px) {
+            .d-grid {
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+            }
         }
 
         @media (max-width: 992px) {
@@ -124,7 +131,7 @@
         }
 
     </style>
-
+    
 </head>
 <body>
     
