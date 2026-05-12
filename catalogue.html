@@ -47,6 +47,16 @@
         font-style: bold;
     }
 
+    @media (max-width: 768px) {
+        .headerBranding a {
+            flex-direction: column;
+            gap: 10px;              
+        }
+        #headerName {
+            font-size: 2rem; 
+        }
+    }
+    
     #headerMenu {
         display: flex;
         flex-wrap: wrap;
@@ -121,9 +131,6 @@
     @media (max-width: 720px) {
         #hero {
             display: none;
-        }
-        #headerName {
-            font-size: 3rem;
         }
         #mobileHero {
             display: flex;
