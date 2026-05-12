@@ -128,41 +128,42 @@
         #mobileHero {
             display: flex;
             flex-direction: column;
-            align-items: center; /* Centers children horizontally */
+            align-items: center; 
             justify-content: center;
             background-color: #4f2962;
             width: 90%;
-            margin: 10px auto; /* Centers the hero box itself */
+            margin: 10px auto; 
             border: 5px dashed #ff6c8f;
-            border-radius: 30px; /* Changed from % to px for better mobile look */
+            border-radius: 30px; 
             padding: 1rem 1rem;
         }
         /* Target the column containers */
         .col-lg-6 {
-            width: 100%; /* Changed from 150% to 100% to stay inside the box */
+            width: 100%;
             margin: 0 auto;
             display: flex;
             flex-direction: column;
-            align-items: center; /* Centers the buttons/text */
+            align-items: center;
         }
         /* Target the button grid */
         .d-grid {
             width: 100%;
-            display: flex !important; /* Force flex for easier centering */
+            display: flex !important;
             flex-direction: column;
             align-items: center;
             gap: 15px;
         }
-        /* The "Buttons" (Price items) */
+        /* The "Buttons" (items) */
         .text-body-secondary {
-            width: 80%; /* Adjusted from 140% to fit the screen */
+            width: 80%;
             max-width: 250px;
             padding: 15px;
             text-align: center;
+            align-items: center;
             text-decoration: none;
             border: 6px solid #ba8cbe;
             background-color: #9172a2;
-            border-radius: 20px; /* Circles (50%) often look squished on wide text */
+            border-radius: 20px;
         }
         .text-body-secondary:hover {
             background-color: #ffc107;
