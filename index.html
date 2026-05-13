@@ -44,23 +44,13 @@
             font-family: "Lilita One", bold;
             font-style: bold;
         }
-
-        @media (max-width: 768px) {
-            .headerBranding a {
-                flex-direction: column;
-                gap: 10px;              
-            }
-            #headerName {
-                font-size: 2rem; 
-            }
-        }
         
         #headerMenu {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
         }
-
+    
         .nav-item {
             margin: 10px;
             background-color: #ffc107;
@@ -69,13 +59,13 @@
             text-align: center;
             align-content: center;
         }
-
+    
         .nav-item:hover {
             background-color: #ffa7b8;
             border-radius: 10px;
             color: #1f1a32;
         }
-
+    
         .nav-link {
             text-decoration: none;
             color: #1f1a32;
@@ -85,9 +75,22 @@
             text-align: center;
             align-content: center;
         }
-
+    
         .nav-link:hover {
             color: #4f2962;
+        }
+        
+        @media (max-width: 768px) {
+            .headerBranding a {
+                flex-direction: column;
+                gap: 10px;              
+            }
+            #headerName {
+                font-size: 2rem; 
+            }
+            .nav-link {
+                font-size: 140%;
+            }
         }
 
         .name {
@@ -175,7 +178,7 @@
                 margin-top: 2%;
             }
             .lead {
-                font-size: 100%;
+                font-size: 140%;
             }
         }
 
@@ -219,6 +222,7 @@
         @media (max-width: 768px) {
             #footer span {
                 font-size: 120%;
+                align-self: center;
             }
             #footerLogo {
                 display: none;
