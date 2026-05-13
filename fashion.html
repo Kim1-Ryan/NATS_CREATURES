@@ -16,42 +16,33 @@
             flex-direction: column;
             background-color: #ba8cbe;
             background-size: cover;
-            flex-wrap: wrap !important;
             text-align: center;
         }
-
+        
         #header {
             display: flex;
             flex-wrap: wrap !important;
             justify-content: center;
         }
-
+        
+        @media (max-width: 768px) {
+            .headerBranding img {
+                height: 80px;
+            }
+        }
+        
         .name {
             color: #fffcd1;
-            font-family: "Lilita One", bold;
-            font-weight: 400;
-            font-style: bold;
+            font-family: "Lilita One", sans-serif;
+            font-weight: bold;
         }
-
+        
         #mainName {
             font-size: 600%;
             padding-top: 6px;
             margin: 1%;
-            justify-self: center;
         }
-
-        @media (max-width: 768px) {
-            #mainName {
-                font-size: 400%;
-            }
-        }
-
-        @media (max-width: 992px) {
-            #mainName {
-                font-size: 480%;
-            }
-        }
-
+        
         #hero {
             background-color: #4f2962;
             width: 70%;
@@ -61,76 +52,119 @@
             border-radius: 30%;
             text-align: center;
             padding: 1.5%;
-            justify-self: center;
         }
-
-        @media (max-width: 768px) {
-            #hero {
-                width: 90%;
-            }
-        }
-
+        
         .col-lg-6 {
             width: 100%;
             margin: 2%;
-            justify-items: center;
-            font-family: "Lilita One", bold;
+            font-family: "Lilita One", sans-serif;
+            font-weight: bold;
         }
-
-        .d-grid {
-            gap: 50px;
-        }
-
-        @media (max-width: 768px) {
-            .d-grid {
-                flex-direction: column;
-                align-items: center;
-                gap: 30px;
-            }
-        }
-
-        @media (max-width: 992px) {
-            .d-grid {
-                flex-direction: column;
-                align-items: center;
-                gap: 40px;
-            }
-        }
-
+        
+        /* pc button styles */
         .text-body-secondary {
-            width: 140%;
-            padding: 4%;
+            display: inline-flex !important;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 150px; 
+            height: 150px; 
+            padding: 10px !important; 
             text-align: center;
+            text-decoration: none;
             border: 6px solid #ba8cbe;
             background-color: #9172a2;
-            border-radius: 50%;
+            border-radius: 50% !important; 
         }
-
+        
         .text-body-secondary:hover {
             background-color: #ffc107;
         }
-
-        @media (max-width: 992px) {
-            .text-body-secondary {
-                padding: 22%;
-            }
+        
+        .text-body-secondary h3 {
+            margin: 0;
+            padding: 0;
+            font-size: 1.2rem;
+            color: #fffcd1;
         }
 
+        .text-body-secondary:hover h3 {
+            color: #1f1a32 !important;
+        }
+        
+        .d-grid {
+            display: flex !important;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        
+        /* Tablet Screens */
+        @media (max-width: 992px) {
+            #mainName {
+                font-size: 480%;
+            }
+            .d-grid {
+                gap: 20px;
+            }
+            .text-body-secondary {
+                width: 130px; /* make divs even smaller on smaller screens */
+                height: 130px;
+            }
+            .text-body-secondary h3 {
+                font-size: 1.1rem;
+            }
+        }
+        
+        /* Mobile Screens */
+        @media (max-width: 768px) {
+            #hero {
+                width: 90%;
+                margin: 10px auto; 
+                border-radius: 30px; 
+                padding: 1rem;
+            }
+            #mainName {
+                font-size: 300%;
+                margin-top: 2%;
+            }
+            .col-lg-6 {
+                width: 100%;
+                margin: 0 auto;
+            }
+            .d-grid {
+                flex-direction: column; /* stacks items vertically on phone screens */
+                align-items: center;
+                gap: 15px;
+            }
+            .text-body-secondary {
+                width: 120px; /* smaller on mobile */
+                height: 120px;
+            }
+        }
+        
         #footer {
             width: 100%;
             text-align: center;
-            position: relative; 
-            bottom: 0;
-            justify-self: center;
         }
-
+        
         #footer span {
             font-size: 160%;
             color: #1f1a32;
             text-shadow: 2px 2px 4px #4f2962;
-            font-family: "Lilita One", bold;
+            font-family: "Lilita One", sans-serif;
+            font-weight: bold;
         }
 
+        @media (max-width: 768px) {
+            #footer span {
+                font-size: 120%;
+            }
+            #footerLogo {
+                display: none !important;
+            }
+        }
     </style>
     
 </head>
