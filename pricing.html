@@ -184,14 +184,27 @@
 
     #footer {
         width: 100%;
-        text-align: center;
+        display: flex; 
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
     }
-
+            
     #footer span {
-        font-size: 160%;
+        font-size: 150%;
         color: #1f1a32;
         text-shadow: 2px 2px 4px #4f2962;
         font-family: "Lilita One", bold;
+        text-align: center; 
+    }
+            
+    @media (max-width: 768px) {
+        #footer span {
+            font-size: 120%;
+        }
+        #footerLogo {
+            display: none;
+        }
     }
 
 </style>
