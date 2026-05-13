@@ -25,6 +25,12 @@
             justify-content: center;
         }
 
+        @media (max-width: 768px) {
+            .headerBranding img {
+            height: 80px;
+            }
+        }
+
         .name {
             color: #fffcd1;
             font-family: "Lilita One", bold;
@@ -37,12 +43,6 @@
             padding-top: 6px;
             margin: 1%;
             justify-self: center;
-        }
-
-        @media (max-width: 768px) {
-            #mainName {
-                font-size: 380%;
-            }
         }
 
         @media (max-width: 992px) {
@@ -62,13 +62,7 @@
             padding: 1.5%;
             justify-self: center;
         }
-
-        @media (max-width: 768px) {
-            #hero {
-                width: 90%;
-            }
-        }
-
+        
         .col-lg-6 {
             width: 100%;
             margin: 2%;
@@ -79,29 +73,7 @@
         .d-grid {
             gap: 50px;
         }
-
-        @media (max-width: 768px) {
-            .col-lg-6 {
-                justify-self: center;
-                align-self: center;
-            }
-            .d-grid {
-                flex-direction: column;
-                align-items: center;
-                gap: 30px;
-                justify-self: center;
-                align-self: center;
-            }
-        }
-
-        @media (max-width: 992px) {
-            .d-grid {
-                flex-direction: column;
-                align-items: center;
-                gap: 40px;
-            }
-        }
-
+        
         .text-body-secondary {
             width: 140%;
             padding: 4%;
@@ -113,6 +85,63 @@
 
         .text-body-secondary:hover {
             background-color: #ffc107;
+        }
+        
+        /* mobile screens */
+        @media (max-width: 768px) {
+            #hero {
+                display: flex;
+                flex-direction: column;
+                align-items: center; 
+                justify-content: center;
+                width: 90%;
+                margin: 10px auto; 
+                border-radius: 30px; 
+                padding: 1rem 1rem;
+            }
+            /* Target the column containers */
+            .col-lg-6 {
+                width: 100%;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            /* Target the button grid */
+            .d-grid {
+                width: 100%;
+                display: flex !important;
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+            /* The "Buttons" (items) */
+            .text-body-secondary {
+                width: 80%;
+                max-width: 250px;
+                padding: 15px;
+                text-align: center;
+                justify-self: center;
+                text-decoration: none;
+                border: 6px solid #ba8cbe;
+                background-color: #9172a2;
+                border-radius: 20px;
+            }
+            .text-body-secondary:hover {
+                background-color: #ffc107;
+            }
+            #mainName {
+                font-size: 300%;
+                margin-top: 2%;
+            }
+        }
+        
+        @media (max-width: 992px) {
+            .d-grid {
+                flex-direction: column;
+                align-items: center;
+                gap: 40px;
+            }
         }
 
         @media (max-width: 992px) {
