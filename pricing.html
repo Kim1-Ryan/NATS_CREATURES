@@ -137,8 +137,9 @@
         flex-direction: row;
         gap: 20px;
     }
-    
-    @media (max-width: 992px) {
+
+    /* mobile screens */
+    @media (max-width: 768px) {
         #mainName {
             font-size: 270%;
             padding-top: 4%;
@@ -167,6 +168,38 @@
         }
         .card-body .list-unstyled li {
             font-size: 1.2rem !important;
+        }
+    }
+
+    /* tablet / medium screens */
+    @media (min-width: 769px) and (max-width: 1199px) {
+        #mainName {
+            font-size: 400%; 
+        }
+        
+        #hero {
+            width: 85%; 
+            padding: 2.5%;
+            border-radius: 15%; 
+        }
+    
+        .lead {
+            font-size: 180%; 
+            width: 90%;
+        }
+    
+        #priceCards {
+            width: 95%;
+            flex-direction: row; 
+            gap: 12px; 
+        }
+    
+        .card-header h2 {
+            font-size: 2rem !important;
+        }
+    
+        .card-body {
+            font-size: 130%; 
         }
     }
 
