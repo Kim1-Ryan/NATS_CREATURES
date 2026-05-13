@@ -129,27 +129,27 @@
         justify-self: center;
         font-family: "Lilita One", bold;
     }
-
-    @media (max-width: 992px) {
-        #mainName {
-            font-size: 420%;
-            padding-top: 4%;
-        }
-        .lead {
-            font-size: 180%;
-            width: 80%;
-        }
-    }
-
+    
     #priceCards {
         width: 90%;
         justify-self: center;
+        display: flex;
+        flex-direction: row;
     }
-
+    
     @media (max-width: 992px) {
+        #mainName {
+            font-size: 270%;
+            padding-top: 4%;
+        }
+        .lead {
+            font-size: 140%;
+            width: 80%;
+        }
         #priceCards {
             width: 80%;
             padding: 3%;
+            flex-direction: column;
         }
     }
 
@@ -245,7 +245,7 @@
        
 
         <!--pricing cards-->
-        <div id="priceCards" class="row row-cols-1 row-cols-md-1 row-cols-lg-1 row-cols-xlg-3 mb-3 text-center"> 
+        <div id="priceCards" class="mb-3 text-center"> 
             
             <div class="col"> 
                 <div class="card mb-4"> 
