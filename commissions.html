@@ -35,15 +35,6 @@
             font-family: "Lilita One", bold;
         }
 
-        @media (max-width: 768px) {
-            #header {
-                height: 300px;
-            }
-            #mainName {
-                font-size: 400%;
-            }
-        }
-
         @media (max-width: 992px) {
             #mainName {
                 font-size: 480%;
@@ -77,6 +68,12 @@
         }
 
         @media (max-width: 768px) {
+            #headerLogo {
+                height: 90px;
+            }
+            #mainName {
+                font-size: 250%;
+            }
             .quilt-container {
                 grid-template-columns: repeat(3, 117px);
                 grid-template-rows: repeat(3, 117px);
@@ -85,6 +82,7 @@
             .patch {
                 width: 117px;
                 height: 117px;
+                border-radius: 0;
             }
             #last {
                 display: none;
