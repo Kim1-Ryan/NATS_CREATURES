@@ -99,42 +99,68 @@
             }
         }
 
+        /* tablet screens */
         @media (min-width: 769px) and (max-width: 992px) {
             .quilt-container {
                 grid-template-columns: repeat(5, 150px);
                 grid-template-rows: repeat(5, 150px);
                 gap: 0px;
+                border-bottom: 3px solid #ffc107;
+                border-right: 3px solid #ffc107;
+                box-sizing: border-box;
             }
             .patch {
                 width: 150px;
                 height: 150px;
+                border-top: 3px solid #ffc107 !important;
+                border-left: 3px solid #ffc107 !important;
+                border-right: none !important;
+                border-bottom: none !important;
+                box-sizing: border-box;
             }
         }
 
+        /* desktop screens - medium */
         @media (min-width: 993px) and (max-width: 1600px) {
             .quilt-container {
                 grid-template-columns: repeat(5, 197px);
                 grid-template-rows: repeat(5, 197px);
                 gap: 0px;
+                border-bottom: 3px solid #ffc107;
+                border-right: 3px solid #ffc107;
+                box-sizing: border-box;
             }
             .patch {
                 width: 197px;
                 height: 197px;
+                border-top: 3px solid #ffc107 !important;
+                border-left: 3px solid #ffc107 !important;
+                border-right: none !important;
+                border-bottom: none !important;
+                box-sizing: border-box;
             }
         }
 
+        /* desktop screens - large */
         @media (min-width: 1601px) and (max-width: 1700px) {
             .quilt-container {
                 grid-template-columns: repeat(5, 260px);
                 grid-template-rows: repeat(5, 260px);
                 gap: 0px;
+                border-bottom: 3px solid #ffc107;
+                border-right: 3px solid #ffc107;
+                box-sizing: border-box;
             }
             .patch {
                 width: 260px;
                 height: 260px;
+                border-top: 3px solid #ffc107 !important;
+                border-left: 3px solid #ffc107 !important;
+                border-right: none !important;
+                border-bottom: none !important;
+                box-sizing: border-box;
             }
         }
-
 
         #footer {
             width: 100%;
