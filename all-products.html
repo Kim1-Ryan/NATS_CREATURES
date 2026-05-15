@@ -55,6 +55,10 @@
             height: 250px;
         }
 
+        .tablet-only-patch {
+            display: none;
+        }
+
         .color-a { 
             background-color: #ffa7b8;
             background-size: cover;
@@ -101,6 +105,9 @@
 
         /* tablet screens */
         @media (min-width: 769px) and (max-width: 992px) {
+            .tablet-only-patch {
+                display: block; /* reveals only on tablet screens */
+            }
             .quilt-container {
                 grid-template-columns: repeat(5, 150px);
                 grid-template-rows: repeat(5, 150px);
@@ -257,6 +264,7 @@
         <div class="patch color-a"></div>
         <div class="patch color-b"></div>
         <div id="last" class="patch color-a"></div>
+        <div class="patch color-b tablet-only-patch"></div>
     </div>
 
 
