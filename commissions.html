@@ -42,17 +42,17 @@
         }
 
         .quilt-container {
-        display: grid;
-        align-self: center;
-        grid-template-columns: repeat(5, 350px); /* number of columns */
-        grid-template-rows: repeat(5, 350px);
-        gap: 2px; /* simulates seam lines */
-        background-color: transparent;
+            display: grid;
+            align-self: center;
+            grid-template-columns: repeat(5, 350px); /* number of columns */
+            grid-template-rows: repeat(5, 350px);
+            gap: 2px; /* simulates seam lines */
+            background-color: transparent;
         }
 
         .patch {
-        width: 350px;
-        height: 350px;
+            width: 350px;
+            height: 350px;
         }
 
         .color-a { 
@@ -67,6 +67,7 @@
             border: 3px solid #ffc107;
         }
 
+        /* mobile screens */
         @media (max-width: 768px) {
             #headerLogo {
                 height: 100px;
@@ -79,11 +80,14 @@
                 grid-template-columns: repeat(3, 117px);
                 grid-template-rows: repeat(3, 117px);
                 gap: 0px;
+                padding: 1.5px;
+                overflow: hidden; 
             }
             .patch {
                 width: 117px;
                 height: 117px;
                 border-radius: 0 !important;
+                margin: -1.5px;
             }
             #last {
                 display: none;
